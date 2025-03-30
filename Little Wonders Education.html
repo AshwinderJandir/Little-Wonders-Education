@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://127.0.0.1:5500/html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Wonders Education</title>
+    <link href="./Little Wonders Education_files/css2" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #023299; /* Navy Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 10%;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .address {
+            background-color: #e9eff5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Little Wonders Education</h1>
+        <p>Fostering Bright Minds for a Better Tomorrow</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="http://127.0.0.1:5500/html#home">Home</a>
+        <a href="http://127.0.0.1:5500/html#about">About Us</a>
+        <a href="http://127.0.0.1:5500/html#services">Services</a>
+        <a href="http://127.0.0.1:5500/html#contact">Contact Us</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Little Wonders Education</h2>
+        <p>Your child's bright future starts here! We provide top-notch education for students, empowering them with knowledge, creativity, and the skills they need to succeed.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Little Wonders Education is dedicated to providing personalized educational experiences for students. Our team of experienced educators focuses on nurturing creativity, curiosity, and a love for learning. With a blend of modern teaching methods and a caring environment, we prepare students to thrive academically and socially.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Nanny Courses </li>
+            <li>Ilets course </li>
+           <li>After-School courses</li>
+           <li>other courses</li>
+        </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="address">
+            <p><strong>Little Wonders Education</strong></p>
+            <p>Arora Tower 2nd Floor, 
+               Above Kotak Mahindra Bank GT road Bhoghpur 
+            </p>
+            <p>Email: Littlewondereducation@gmail.com</p>
+            <p>Phone: 9465437722,9465337722,8427419454</p>
+        </div>
+
+        <h3>Get in Touch</h3>
+        <form class="contact-form" action="http://127.0.0.1:5500/submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required="">
+            <input type="email" name="email" placeholder="Your Email" required="">
+            <textarea name="message" rows="4" placeholder="Your Message" required=""></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Little Wonders Education.Goverment verified Institution. All rights reserved.</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
